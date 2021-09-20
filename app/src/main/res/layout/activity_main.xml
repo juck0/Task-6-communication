@@ -5,57 +5,96 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="8dp"
+    android:background="@color/pink"
+    android:padding="@dimen/padding_small"
     >
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_up"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="@color/teal_200"
+        android:elevation="8dp"
+        app:cardCornerRadius="@dimen/radius_big"
+        android:backgroundTint="@color/light_green"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/input_text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:hint="Enter Text Here"
-        android:gravity="center"
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="@id/fragmentContainerView"
-        app:layout_constraintStart_toStartOf="@id/fragmentContainerView"
-        app:layout_constraintEnd_toEndOf="@id/fragmentContainerView"
-        app:layout_constraintBottom_toTopOf="@+id/button_send"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_up"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="200dp"
+            android:hint="Enter Text Here"
+            android:textSize="@dimen/text_big"
+            app:layout_constraintBottom_toTopOf="@+id/button_send"
+            app:layout_constraintEnd_toEndOf="@id/fragment_up"
+            app:layout_constraintStart_toStartOf="@id/fragment_up"
+            app:layout_constraintTop_toTopOf="@id/fragment_up" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_writing"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="130dp"
         />
 
+    </androidx.cardview.widget.CardView>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fregment2"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_down"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="@color/teal_700"
+        android:backgroundTint="@color/light_green"
+        android:elevation="8dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
-    <TextView
-        android:id="@+id/text_down"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Text Will Display Here"
-        android:textSize="30sp"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="@id/fregment2"
-        app:layout_constraintBottom_toBottomOf="@id/fregment2"
-        app:layout_constraintStart_toStartOf="@id/fregment2"
-        app:layout_constraintEnd_toEndOf="@id/fregment2"
-        />
-    <Button
-        android:id="@+id/button_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send"
-        app:layout_constraintBottom_toBottomOf="@id/fragmentContainerView"
-        app:layout_constraintStart_toStartOf="@id/fragmentContainerView"
-        app:layout_constraintEnd_toEndOf="@id/fragmentContainerView"
-/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_up">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_down"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/card_down"
+            app:layout_constraintEnd_toEndOf="@id/card_down"
+            app:layout_constraintStart_toStartOf="@id/card_down"
+            app:layout_constraintTop_toTopOf="@id/card_down" />
+
+        <TextView
+            android:id="@+id/text_down"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="Text Will Display Here"
+            android:textSize="@dimen/text_big"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_down"
+            app:layout_constraintEnd_toEndOf="@id/fragment_down"
+            app:layout_constraintStart_toStartOf="@id/fragment_down"
+            app:layout_constraintTop_toTopOf="@id/fragment_down" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_link"
+            android:backgroundTint="@color/pink"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="120dp"
+
+            />
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

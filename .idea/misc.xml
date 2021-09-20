@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/fragment_down.xml" value="0.22447916666666667" />
         <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/fragment_up.xml" value="0.22447916666666667" />
+        <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12604166666666666" />
       </map>
     </option>
   </component>
@@ -14,5 +15,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>
