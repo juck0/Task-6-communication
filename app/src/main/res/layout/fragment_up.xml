@@ -4,38 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UpFragment">
+    tools:context=".UpFragment"
+    android:padding="8dp"
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_up"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:backgroundTint="@color/light_green"
         android:elevation="8dp"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/input_text"
             android:layout_width="350dp"
             android:layout_height="100dp"
-            app:layout_constraintBottom_toTopOf="@+id/button_send"
-            app:layout_constraintEnd_toEndOf="@id/fragment_up"
-            app:layout_constraintStart_toStartOf="@id/fragment_up"
-            app:layout_constraintTop_toTopOf="@id/fragment_up"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="150dp"
             android:gravity="center"
             android:hint="@string/enter_text_here"
             android:inputType="text"
-            android:textSize="@dimen/text_big" />
+            android:textSize="@dimen/text_big"
+            app:layout_constraintBottom_toTopOf="@+id/button_send"
+            app:layout_constraintEnd_toEndOf="@id/fragment_up"
+            app:layout_constraintStart_toStartOf="@id/fragment_up"
+            app:layout_constraintTop_toTopOf="@id/fragment_up" />
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="130dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/ic_writing" />
 

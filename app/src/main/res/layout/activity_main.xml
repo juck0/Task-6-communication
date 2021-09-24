@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:layout_margin="8dp"
     android:background="@color/pink"
-    android:padding="@dimen/padding_small"
     >
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_up"
@@ -23,7 +23,6 @@
             android:name="com.example.task6.DownFragment"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_marginTop="8dp"
             android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
