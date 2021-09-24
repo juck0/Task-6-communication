@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStuioProjects/Task-6-Communication/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidStuioProjects/Task-6-Communication/app/src/main/res/layout/fragment_down.xml" value="0.10989583333333333" />
+        <entry key="..\:/AndroidStuioProjects/Task-6-Communication/app/src/main/res/layout/fragment_up.xml" value="0.22447916666666667" />
         <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/fragment_down.xml" value="0.22447916666666667" />
         <entry key="..\:/AndroidStuioProjects/Task6/app/src/main/res/layout/fragment_up.xml" value="0.22447916666666667" />
@@ -10,6 +13,7 @@
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
